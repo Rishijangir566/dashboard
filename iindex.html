@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wapper">
+        <div class="profile">
+            <div class="profileImage">
+                <img src="https://media.istockphoto.com/id/2106867986/photo/young-man-gesturing-double-thumbs-up-isolate-over-grey-background.webp?b=1&s=612x612&w=0&k=20&c=Iy2uQUe0Uqw3kCcbnUIzhqv_M-hzqtW8f7cyfzcWZVA="
+                    alt="">
+            </div>
+            <div class="name">
+                <h2>JHON DON</h2>
+                <p>johndon004@gmail.com</p>
+            </div>
+            <div class="about">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><button onclick="home()">Home</button> </li>
+                    <li><i class="fa-solid fa-file"></i>&nbsp; <button onclick="file()">File</button></li>
+                    <li><i class="fa-solid fa-message"></i> <button onclick="msg()">Message</button></li>
+                    <li><i class="fa-solid fa-check"></i><button onclick="noti()">Notification</button> </li>
+                    <li><i class="fa-solid fa-location-crosshairs"></i><button onclick="lock()">Location</button></li>
+                    <li><i class="fa-solid fa-chart-simple"></i> <button onclick="grap()">Graph</button></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="dashboard">
+
+            <div class="navbar">
+                <div class="logo">
+                    <h2>Dashboard User</h2>
+                </div>
+                <div class="menu">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </div>
+
+
+
+            <div class="boxs">
+                <div class="box box1">
+                    <div class="boxHead one">
+                        <h4>Earning </h4>
+                        <span><i class="fa-solid fa-dollar-sign"></i></span>
+                    </div>
+                    <h1><span><i class="fa-solid fa-dollar-sign"></i></span>628</h1>
+                </div>
+                <div class="box box2">
+                    <div class="boxHead">
+                        <h4>Share </h4>
+                        <span><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <h1>6258</h1>
+                </div>
+                <div class="box box3">
+                    <div class="boxHead">
+                        <h4>Like </h4>
+                        <span><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <h1>72636</h1>
+                </div>
+                <div class="box box4">
+                    <div class="boxHead">
+
+                        <h4>Rating</h4>
+                        <span> <i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <h1>8.5</h1>
+                </div>
+
+            </div>
+
+            <div class="allCharts">
+                <div class="graphs">
+                    <div class="heightGraph">
+                        <img src="image/graph.jpeg" alt="">
+                        <img src="image/graph2.jpeg" alt="">
+                    </div>
+                    <!-- <div class="widthGraph">
+                    </div> -->
+                </div>
+                <div class="chart">
+                    <img src="image/chart.jpeg" alt="">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        function home() {
+            document.querySelector(".box1").style.backgroundColor = "lightblue";
+        }
+        function file() {
+            document.querySelector(".box2").style.backgroundColor = "lightblue";
+            document.querySelector(".box1").style.backgroundColor = "#194465";
+        }
+        function msg() {
+            document.querySelector(".box3").style.backgroundColor = "lightblue";
+            document.querySelector(".box2").style.backgroundColor = "#194465";
+        }
+        function noti() {
+            document.querySelector(".box4").style.backgroundColor = "lightblue";
+            document.querySelector(".box3").style.backgroundColor = "#194465";
+        }
+
+
+    </script>
+</body>
+
+</html>
